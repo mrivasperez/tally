@@ -1,4 +1,4 @@
-import Counter from './components/Counter'
+import Counter from './Counter/Counter'
 
 function App(): JSX.Element {
   return (
