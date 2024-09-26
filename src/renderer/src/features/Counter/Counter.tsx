@@ -44,14 +44,23 @@ const Counter = ({ initialCount }: CounterProps): JSX.Element => {
   }
 
   return (
-    <div>
-      <div>{state.count}</div>
-      <button onClick={handleIncrement}>Plus</button>
-      <button onClick={handleDecrement}>Minus</button>
-      <form action="" onSubmit={handleSubmit}>
+    <div className="counter" id="drag">
+      <div className="counter__container">
+        <div className="counter__container__count">{state.count}</div>
+        <div className="counter__container__actions" id="no-drag">
+          <button onClick={handleIncrement} className="counter__container__actions__increment">
+            +
+          </button>
+          <button onClick={handleDecrement} className="counter__container__actions__decrement">
+            -
+          </button>
+        </div>
+      </div>
+
+      <form action="" onSubmit={handleSubmit} className="counter__form" id="no-drag">
         <label htmlFor="">Custom Amount</label>
         <input type="number" name="" id="" value={state.valueToAdd} onChange={handleChange} />
-        <button>Submit</button>
+        <button>↪</button>
         <p className="">Use negative number to subtract.</p>
       </form>
     </div>

@@ -1,0 +1,128 @@
+@import url(reset.css);
+@import url(window.css);
+
+* {
+  font-family: monospace !important;
+}
+
+/* Title Bar Styling */
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1857a5;
+  padding: 0.5rem;
+}
+
+.title-bar__button {
+  background-color: #99c1f1;
+  border: red;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100%;
+  transition: all 0.175s linear;
+}
+
+.title-bar__button:hover {
+  background-color: #f66151;
+  scale: 4;
+}
+
+.title-bar__title {
+  font-weight: bold;
+  color: #f6f5f4;
+}
+
+/* Counter Styles */
+.counter {
+  padding: 1.33rem 2rem;
+}
+
+.counter__form {
+  margin: 2rem 0;
+}
+
+.counter__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter__container__count {
+  margin-bottom: 2rem;
+  color: #f6f5f4;
+  font-size: 4rem;
+}
+
+.counter__container__actions button {
+  height: 3rem;
+  width: 3rem;
+  /* border: none; */
+  border-radius: 0.75rem;
+  margin: 0 0.5rem;
+  font-size: 2rem;
+}
+
+.counter__container__actions__increment {
+  border: 2px solid #8ff0a4;
+  background-color: transparent;
+  color: #8ff0a4;
+}
+
+.counter__container__actions__increment:hover {
+  border: 2px solid #2ec27e;
+  background-color: #33d17a;
+  color: #000000;
+}
+
+.counter__container__actions__decrement {
+  border: 2px solid #f66151;
+  background-color: transparent;
+  color: #f66151;
+}
+
+.counter__container__actions__decrement:hover {
+  border: 2px solid #c01c28;
+  background-color: #e01b24;
+  color: #fff;
+}
+
+/* Counter Form Styles */
+.counter__form {
+  background-color: hsl(213, 75%, 25%);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  label {
+    color: #f6f5f4;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+
+  input {
+    background-color: #1857a5;
+    border: 1px solid #f6f5f4;
+    color: #f6f5f4;
+    font-size: 1.2rem;
+    border-right: none;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  p {
+    color: #f6f5f4;
+  }
+
+  button {
+    color: #f6f5f4;
+    background-color: #1857a5;
+    border: 1px solid #f6f5f4;
+    font-size: 1.2rem;
+    border-left: none;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+}

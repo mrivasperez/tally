@@ -1,0 +1,15 @@
+#drag {
+  -webkit-app-region: drag;
+}
+
+#no-drag {
+  -webkit-app-region: no-drag;
+}
+
+#window {
+  border-radius: .75rem;
+  background-color: #1857A5;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: none !important;
+}
