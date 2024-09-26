@@ -1,6 +1,8 @@
 # tally
 
-An Electron application with React and TypeScript
+![Tally Screenshot](screenshot.png)
+
+An Electron application with React and TypeScript to help you keep count of stuff.
 
 ## Recommended IDE Setup
 
